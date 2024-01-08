@@ -693,6 +693,7 @@ $btn-mb: 0.5rem;
   z-index: 99;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
+  background-position: center;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -752,19 +753,23 @@ $btn-mb: 0.5rem;
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      color: var(--site-title-color);
+      //color: var(--site-title-color);
+      // MODIFIED: name text color
+      color: rgba(236, 236, 236, 99%);
     }
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
+    //color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    // MODIFIED: subtitle text color
+    color: rgba(236, 236, 236, 99%);
   }
 
   ul {
@@ -783,6 +788,8 @@ $btn-mb: 0.5rem;
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 600;
+        // MODIFIED: li text color
+        color: rgba(236, 236, 236, 99%);
 
         &:hover {
           background-color: var(--sidebar-hover-bg);
@@ -799,17 +806,17 @@ $btn-mb: 0.5rem;
           letter-spacing: 0.2px;
         }
       }
-
-      &.active {
-        .nav-link {
-          color: var(--sidebar-active-color);
-          background-color: var(--sidebar-hover-bg);
-
-          span {
-            opacity: 1;
-          }
-        }
-      }
+      // MODIFIED: deactivate automatic first li background
+      //&.active {
+      //  .nav-link {
+      //    color: var(--sidebar-active-color);
+      //    background-color: var(--sidebar-hover-bg);
+      //
+      //    span {
+      //      opacity: 1;
+      //    }
+      //  }
+      //}
 
       &:not(:first-child) {
         margin-top: 0.25rem;
@@ -829,14 +836,15 @@ $btn-mb: 0.5rem;
       height: $btn-size;
       margin-bottom: $btn-mb; // multi line gap
       border-radius: 50%;
-      color: var(--sidebar-btn-color);
+      //color: var(--sidebar-btn-color);
       background-color: var(--sidebar-btn-bg);
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: var(--sidebar-border-color) 0 0 0 1px;
-
+      // MODIFIED: button icon color
+      color: rgba(236, 236, 236, 99%);
       &:hover {
         background-color: var(--sidebar-hover-bg);
       }
@@ -1296,6 +1304,10 @@ search {
 
     transform: translateX(-$sidebar-width); /* hide */
     -webkit-transform: translateX(-$sidebar-width);
+    // MODIFIED: LNB(left navigation bar) background image
+    background: url('/assets/img/lnb_background.jpeg') left;
+    background-size: cover;
+    height: 100vh;
   }
 
   #main-wrapper {
@@ -1365,6 +1377,10 @@ search {
     .profile-wrapper {
       margin-top: 3rem;
     }
+    // MODIFIED: LNB(left navigation bar) background image
+    background: url('/assets/img/lnb_background.jpeg') left;
+    background-size: cover;
+    height: 100vh;
   }
 
   #search-hints {
