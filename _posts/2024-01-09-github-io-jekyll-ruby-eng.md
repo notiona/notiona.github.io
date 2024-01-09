@@ -139,7 +139,7 @@ Although everything is simple and smooth now, I wanted to tweak the left navigat
 
 I am no css expert, so I had to tweak `_sass/addon/commons.scss` line by line, and deploy locally to see each selector's effect.
 
-Specific changes can be seen [here in my commit](https://github.com/notiona/notiona.github.io/commit/fedb63f1d6e8083e9b74f8da88ec8dcf04c9c375).
+Specific changes can be seen [here in my commit](https://github.com/notiona/notiona.github.io/commit/6ea64ed8c7bcc6714756eb6c1d8c611ef07d1e2a).
 
 ## Write awesome posts
 
