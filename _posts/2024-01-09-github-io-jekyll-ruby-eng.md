@@ -146,10 +146,10 @@ Specific changes can be seen [here in my commit](https://github.com/notiona/noti
 ---
 Please refer to [chirpy's writing guide](https://chirpy.cotes.page/posts/write-a-new-post/) for chirpy-specific and jekyll-specific syntax for writing posts, but generally posts are Markdown files and thus generally follow Markdown syntax.
 
-## Korean Equivalent
+## Korean Equivalent Post
 
 ---
-`TBD`
+[Jekyll과 chirpy 테마 활용해 github.io 블로그 셋업하기](https://notiona.github.io/posts/github-io-jekyll-ruby-kor/)
 
 ## References
 
