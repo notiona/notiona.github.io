@@ -159,4 +159,7 @@ Please refer to [chirpy's writing guide](https://chirpy.cotes.page/posts/write-a
 + [https://chirpy.cotes.page/posts/getting-started/](https://chirpy.cotes.page/posts/getting-started/)
 + [https://chirpy.cotes.page/posts/write-a-new-post/](https://chirpy.cotes.page/posts/write-a-new-post/)
 
+---
 
+> Please feel free to point out any inaccurate or insufficient information. Also, please feel free to leave any questions or suggestions in the comments. 🙇‍♂️
+{: .prompt-info}
