@@ -13,7 +13,7 @@ tags: [github-io, jekyll, chirpy, blog, ruby, troubleshooting]
 
 재미있게 읽어주세요! 😄 저와 비슷한 셋업을 찾으시는 분들께 조금이라도 도움이 되었으면 좋겠습니다.
 
-## 환경
+## 로컬 작업 환경
 
 ---
 + Mac OS Monterey 12.6.3
@@ -23,7 +23,7 @@ tags: [github-io, jekyll, chirpy, blog, ruby, troubleshooting]
 ## 배경지식
 
 ---
-> 이 튜토리얼을 따라가기 위해서 다음과 같은 배경지식/스킬이 필요합니다.
+> 이 글을 제대로 이해하기 위해서는 다음과 같은 배경 지식 및 스킬이 필요해요.
 {: .prompt-info }
 + 간단한 Git 커맨드 (git add, commit, push, pull)
 + GitHub 계정 만드는 방법
@@ -38,7 +38,7 @@ tags: [github-io, jekyll, chirpy, blog, ruby, troubleshooting]
 - [https://jekyll-themes.com/](https://jekyll-themes.com/)
 - [https://jekyllthemes.io/free](https://jekyllthemes.io/free)
 
-다양한 후보가 있기 때문에 선택 기준을 명확히 정하는 것이 좋습니다. 제 경우에는:
+다양한 후보가 있기 때문에 선택 기준을 명확히 정하는 것이 좋습니다. 저 같은 경우 다음과 같은 사항을 중점적으로 고려했습니다.
 - 심플한 (지나치게 화려하지 않은) UI
 - LNB(좌측 네비게이션 바)에 카테고리 필드가 존재할 것
 - 깔끔한 기본 글꼴, 코드 글꼴
@@ -132,7 +132,7 @@ bundle exec jekyll s
 ---
 실제 배포는 이미 chirpy에서 셋업을 잘 해놓아서 `master` 브랜치에 push 하는 것만으로도 GitHub Action을 trigger 시켜 자동으로 CICD가 진행되지만, repo 상단의 GitHub Actions에 들어가 수동으로 배포를 진행할 수도 있습니다.
 
-## 선택적: 왼쪽 사이드바 커스터마이징
+## 선택 사항: 좌측 사이드바 커스터마이징
 
 ---
 지금까지만 해도 충분히 깔끔하지만, 저는 개인적으로 왼쪽 사이드바를 다음과 같이 조금 더 커스터마이징 하고 싶었습니다.
@@ -153,7 +153,7 @@ bundle exec jekyll s
 ---
 [github.io blog setup using jekyll & chirpy theme](https://notiona.github.io/posts/github-io-jekyll-ruby-eng/)
 
-## 참고한 글 / 문서
+## 참고한 글, 문서
 
 ---
 + [https://github.com/topics/jekyll-theme](https://github.com/topics/jekyll-theme)
