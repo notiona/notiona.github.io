@@ -70,7 +70,7 @@ protoc --version
 ## Korean Equivalent Post
 
 ---
-`TBD`
+[Mac arm64 (apple silicon)에 protobuf 소스 파일로 설치하기](https://notiona.github.io/posts/protobuf-mac-arm64-kor/)
 
 ## Reference
 
