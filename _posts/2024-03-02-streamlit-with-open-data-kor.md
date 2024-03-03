@@ -191,7 +191,7 @@ st.plotly_chart(px_chart)
 Plotly의 줌인/줌아웃, 팬 이동, 호버(마우스를 위에 두었을 때 점의 정보 표시), PNG로 내보내기 등의 기능들이 그대로 지원됨도 알 수 있습니다.
 또한 `st.toggle`으로 넣은 토글을 누를 때마다 추세선의 표시 여부도 실시간으로 바뀜을 확인할 수 있습니다. 
 
-![img.png](../assets/img/2024-03-02-streamlit-with-open-data/img.png)
+![img.png](/assets/img/2024-03-02-streamlit-with-open-data/img.png)
 
 
 ## Streamlit 페이지 구성
@@ -203,7 +203,7 @@ Plotly의 줌인/줌아웃, 팬 이동, 호버(마우스를 위에 두었을 때
 
 Streamlit이 지원하는 전체 API 리스트와 상세한 기능은 [이 링크](https://docs.streamlit.io/library/api-reference)에서 확인할 수 있습니다.
 
-![img_1.png](../assets/img/2024-03-02-streamlit-with-open-data/img_1.png)
+![img_1.png](/assets/img/2024-03-02-streamlit-with-open-data/img_1.png)
 
 이러한 UI를 구성하기 위한 streamlit API 코드는 다음과 같습니다.
 
@@ -264,7 +264,7 @@ streamlit run 'seoul_bike_streamlit/streamlit/🚴_Seoul_Bike_Usage_Trend.py'
 이때 이 파이썬 파일에 이모지(🚴, 🇰🇷)가 들어간 것을 확인할 수 있습니다. 이는 multi-page streamlit 앱을 만들 때 사이드바에 띄울 
 페이지 이름 옆에 두는 것으로, 실제 UI에서는 다음과 같이 보입니다.
 
-![img_2.png](../assets/img/2024-03-02-streamlit-with-open-data/img_2.png)
+![img_2.png](/assets/img/2024-03-02-streamlit-with-open-data/img_2.png)
 
 `streamlit run` 커맨드를 통해 `localhost:8501` (기본 포트 값이 8501이고 이 또한 다른 값으로 설정 가능합니다)에 streamlit UI가 뜨고,
 수정사항이 즉시 반영되는 hot-reload 기능도 streamlit이 지원해줘서 로컬에서 수월하게 개발 및 디버깅을 진행할 수 있습니다.
@@ -299,7 +299,7 @@ daily_usage_cal_plot = calplot(agg_daily_heatmap_df,
 st.plotly_chart(daily_usage_cal_plot)
 ```
 
-![img_4.png](../assets/img/2024-03-02-streamlit-with-open-data/img_4.png)
+![img_4.png](/assets/img/2024-03-02-streamlit-with-open-data/img_4.png)
 
 ## 배포
 
@@ -324,7 +324,7 @@ App Url이 최종 배포 되었을 때의 url을 의미하므로, 기존에 존�
 
 Advanced setting에서는 필요한 파이썬 버전이나(크게 상관은 없을 것이나 로컬 개발 환경과 맞추는 것을 추천합니다), 필요한 환경변수를 설정할 수 있습니다.
 
-![img_3.png](../assets/img/2024-03-02-streamlit-with-open-data/img_3.png)
+![img_3.png](/assets/img/2024-03-02-streamlit-with-open-data/img_3.png)
 
 이후 "Deploy!" 버튼을 누르면 귀여운 UI와 함께 배포가 진행됩니다. 배포가 완료되면 app url에 지정한 url에서 배포된 앱을 확인해보세요.
 
