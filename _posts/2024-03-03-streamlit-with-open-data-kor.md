@@ -1,6 +1,6 @@
 ---
 title: Streamlit을 사용한 공공데이터 전처리 & 시각화
-date: 2024-03-02 14:02:30 +0900
+date: 2024-03-03 14:02:30 +0900
 categories: [DATA ANALYSIS]
 tags: [data analysis, python, streamlit, data preprocessing]
 ---
