@@ -147,6 +147,7 @@ DRY (Don't Repeat Yourself) 원리를 준수하고, config와 code를 분리해 
 각 group과 해당 그룹의 데이터프레임을 접근해 그룹별 연산을 수행할 수 있습니다.
 
 이렇게 `서울시 공공자전거 이용정보(일별)` 원본 데이터를 전처리 해 `daily_usage_data`로 만들었습니다.
+
 유사하게 `서울시 공공자전거 이용정보(월별)` 원본 데이터를 전처리 해 `monthly_usage_data`로 만들었습니다.
 
 하지만 여기까지 하더라도 `daily_usage_data`와 `monthly_usage_data`의 크기가 너무 커 streamlit에 보내기에 적합하지 않습니다.
@@ -200,8 +201,6 @@ Plotly의 줌인/줌아웃, 팬 이동, 호버(마우스를 위에 두었을 때
 
 "데이터 시각화" 영역에서는 streamlit이 plotly 차트를 띄우는 `st.ploty_chart()` 함수를 살펴보았습니다.
 이외에 streamlit 웹 UI에 다양한 UI 컴포넌트를 띄우기 위해서는 streamlit이 지원하는 API를 활용해야 합니다.
-
-Streamlit이 지원하는 전체 API 리스트와 상세한 기능은 [이 링크](https://docs.streamlit.io/library/api-reference)에서 확인할 수 있습니다.
 
 ![img_1.png](/assets/img/2024-03-02-streamlit-with-open-data/img_1.png)
 
@@ -309,7 +308,8 @@ st.plotly_chart(daily_usage_cal_plot)
 
 어떤 프로젝트를 하더라도 배포하는 과정이 까다롭고 시행착오가 요구되지만, streamlit의 경우 거의 클릭 몇 번으로 바로 배포가 이루어져 상당히 편했습니다.
 
-> Streamlit의 자체 배포 서비스는 해당 레포지토리가 Public 레포일 때만 가능합니다.
+> Streamlit의 자체 배포 서비스는 해당 레포지토리가 Public 레포일 때만 가능하고,
+> 결과물을 Streamlit 커뮤니티의 모두가 볼 수 있다는 조건에서 가능합니다.
 > Streamlit에서는 이를 "Streamlit Community Cloud" deployment라고 합니다.
 > Private 레포의 경우 자체적으로 배포를 진행해야 합니다.
 > 다만 이 경우에도 streamlit 앱을 실행하는 entrypoint 명령어가 개발 시의 streamlit run 명령어와 동일해
@@ -318,7 +318,7 @@ st.plotly_chart(daily_usage_cal_plot)
 
 우선 public repo에 streamlit 앱에 필요한 코드를 올려두고, 로컬 환경에서 작업했을 때 우측 상단에 있는 "Deploy" 버튼을 누르시면 됩니다.
 
-Deploy 옵션 중 "Streamlit Community Cloud"를 고르고, 
+Deploy 옵션 중 "Streamlit Community Cloud"를 고르고, (위의 콜아웃에서도 말했듯이 이 옵션을 고르면 이 코드가 모두에게 공개됨을 의미합니다)
 타겟 GitHub 레포, 타겟 브랜치, main entrypoint file(이 경우 `🚴_Seoul_Bike_Usage_Trend.py`)와 최종 deploy 될 url을 적어주시면 됩니다.
 App Url이 최종 배포 되었을 때의 url을 의미하므로, 기존에 존재하는 url들과 겹치지 않으면서 앱의 성격을 잘 반영하는 이름을 골라주세요.
 
@@ -336,6 +336,8 @@ Advanced setting에서는 필요한 파이썬 버전이나(크게 상관은 없�
 ## 동일한 영어 포스트
 
 ---
+
+[Data Analysis & Visualization with Streamlit](https://notiona.github.io/posts/streamlit-with-open-data-eng/)
 
 ## 참고한 글, 문서
 
