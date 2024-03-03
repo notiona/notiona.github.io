@@ -256,7 +256,7 @@ the graph is interactively rendered again with the new data.
 {: .prompt-info}
 
 > By default, streamlit runs the full page top to bottom if there is any change in the user input.
-> This means that time-consuming operations like data IO나 data operations are run again and again several times for the same output.
+> This means that time-consuming operations like data IO or data operations are run again and again several times for the same output.
 > To mitigate this inefficiency, streamlit has its own caching methods.
 > To fully integrate streamlit into your project, this is an absolute requirement,
 > For brevity purposes I cannot address this in this post,
