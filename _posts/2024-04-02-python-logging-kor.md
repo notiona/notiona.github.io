@@ -1,6 +1,6 @@
 ---
 title: Python logging 가이드 - 왜 내 logging은 안 보일까?
-date: 2024-03-30 16:41:00 +0900
+date: 2024-04-02 22:41:00 +0900
 categories: [PYTHON]
 tags: [python, logging]
 ---
@@ -136,7 +136,7 @@ logger = logging.getLogger("name of logger here")
 상속 관계는 `.`으로 연결되며, `.`으로 연결된 단위마다 한 단계 자식 로거라고 생각할 수 있습니다.
 다음 그림을 보면 더 쉽게 이해할 수 있습니다.
 
-![img_1.png](img_1.png)
+![img_1.png](/assets/img/2024-04-02-python-logging/img_1.png)
 
 상속 단위 최상단에 위치한 루트 로거(root logger)는 `logging.getLogger()`와 같이 아무 이름이 없는 로거를 의미합니다. 
 (실제 이름을 찍어보면 'root'지만 모든 로거의 부모가 되어야 하기 때문에 빈 문자열로 불러올 수 있습니다.)
@@ -225,7 +225,7 @@ logger.info("I want to log something")  # this will not work :(
 설명의 편의를 위해 필터는 없다고 가정하고 설명을 진행하겠습니다. 필터가 없다는 것은 필터로 인해 막히는 메시지가 없다는 뜻입니다.
 또한 이 로그의 level은 INFO라고 가정하겠습니다.
 
-![img_2.png](img_2.png)
+![img_2.png](/assets/img/2024-04-02-python-logging/img_2.png)
 
 1. 위와 같이 하나의 메시지가 `logger.info()`와 같이 불리면 우선 logger의 설정 레벨에 따라 이 로그를 무시할지 여부를 결정합니다.
 이 로거에 설정된 레벨이 INFO보다 작거나 같다면, 이를 통과시키고 LogRecord 객체를 생성합니다. LogRecord는 로그 메시지와 같지만 단순 
@@ -420,7 +420,7 @@ FileHandler에 따라 `server-warning.log`라는 파일에도 출력됩니다.
 
 이 상황을 logger, handler의 포함 관계와 logger 이름에 따른 상속 관계를 고려해 시각화하면 다음과 같습니다.
 
-![img.png](img.png)
+![img.png](/assets/img/2024-04-02-python-logging/img.png)
 
 ## Logging Workflow 2: Jupyter Notebook
 
