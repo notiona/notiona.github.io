@@ -235,7 +235,7 @@ logger.info("I want to log something")  # this will not work :(
 이 로그를 통과시킵니다. 그리고 각 핸들러의 출력 방법으로 LogRecord를 출력(emit)합니다. 이 핸들러의 작업은 여기서 끝이 납니다.
 4. 해당 로거에 소속된 다른 핸들러가 있다면 (3)의 과정을 반복합니다.
 5. 해당 로거의 `logger.propagate=True` 인지 확인하고, `True`로 설정된 경우 현재 로거를 부모 로거로 바꿔
-루트 로거까지 도달하거나, propagate가 끊기거나, 해당 로거의 level을 통과하지 못할 때까지 (2) 과정을 수행합니다.
+루트 로거까지 도달하거나, propagate가 끊기거나, 해당 로거의 level을 통과하지 못할 때까지 (1) 과정을 반복합니다.
 
 여기까지 보았다면 logging 모듈의 기본적인 메커니즘은 거의 다 이해했다고 할 수 있습니다. 그렇다면 위에 잘 안 되던 예시를 고쳐
 정상적으로 로그를 출력하는 예시로 바꿔 보면서 무엇이 빠져있는지 살펴보겠습니다.
@@ -451,6 +451,7 @@ logger = logging.getLogger(__name__)
 
 ---
 
+[Python logging guide - Why can't I see my logs?](https://notiona.github.io/posts/python-logging-eng/)
 
 ## 참고한 글, 문서
 
