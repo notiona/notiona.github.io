@@ -226,6 +226,7 @@ Attention 메커니즘 쪽에서 $\sqrt{d_{model}}$로 나누는 건 워낙 눈�
 
 ---
 
+[Attention is all you need - Fully grasping the legendary paper](https://notiona.github.io/posts/transformer-faq-eng/)
 
 
 ## 참고한 글, 문서
