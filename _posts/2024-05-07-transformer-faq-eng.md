@@ -140,7 +140,7 @@ Now finally moving on to transformers!
 These videos now deal with the transformers and its variants (such as the decoder-only transformer) and query key value
 operations. It would be helpful to focus on the difference between the transformer and its predecessors, which rely on
 recurrent or convolutional layers. It would be also nice to look at how transformers deal with variable length input
-and output data, and also utilizing concurrency simultaneously.
+and output data, and also utilizing parallelism simultaneously.
 
 - [Youtube 3Blue1Brown Neural Network Series #5~#End)](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi):
 The first four videos of 3Blue1Brown was a complete series on fundamental deep learning, but for some reason 3Blue1Brown has recently
@@ -206,7 +206,7 @@ and the previous output as the input we generate the next token, and so on. This
 push in the SOS token, followed by the whole input token to the decoder, to calculate the loss for the whole sequence length.
 Thus, for variable input variable output models, we need the initial SOS token for the decoder, hence the name "shifted right" makes sense.
 
-> How can we concurrently perform Q, K, V operations if in the decoder we have to wait for the previous prediction as the new input?
+> How can we perform Q, K, V operations in parallel if in the decoder we have to wait for the previous prediction as the new input?
 {: .prompt-info}
 
 In most transformer explanation materials, there tends to be a focus on inference time, discussing decoder-only 
@@ -226,7 +226,7 @@ The actual encoder and decoder only need to perform a forward/backward pass once
 without waiting for inference on each word. During training, the act of ignoring the decoder's output (likely different from the
 correct answer) and giving the correct right-shifted answer tokens is called "teacher forcing".
 
-> How can we properly perform self attention operations concurrently and memory effieciently if the lenghth of input for the encoder and the decoder constantly change?
+> How can we properly perform self attention operations in parallel and memory effieciently if the lenghth of input for the encoder and the decoder constantly change?
 {: .prompt-info}
 
 After examining the operation of training and inference times in transformers, the next thought that came to mind was
