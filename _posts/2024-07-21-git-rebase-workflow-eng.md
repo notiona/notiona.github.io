@@ -80,7 +80,7 @@ a single merge commit in the `main` branch, the power of `git bisect` cannot be 
 
 Also, in the merge strategy if there are branches that are branched off of branches other than `main` and there are merge
 commits that merge `main` to keep track of latest changes, the branch history can be almost cryptic. Here is an example
-of "merge hell".
+of "merge hell". 🥲
 
 ![img_5.png](/assets/img/2024-07-21-git-rebase-workflow/img_5.png)
 
@@ -277,7 +277,7 @@ implying that `git rebase` is a destructive operation. Usually a single feature 
 but when multiple people are working on a same feature branch, the rebase and fast-forward strategy needs extra attention
 and communication. This is because when multiple people are working on the same feature branch,
 there is a possibility you may overwrite or destroy someone else's work that is pushed to remote.
-`git push -f` is always dangerous and needs a lot of care and attention.
+`git push -f` is always dangerous and needs a lot of care and attention. Once again, with great power comes great responsibility.
 
 ## Equivalent Korean Post
 
