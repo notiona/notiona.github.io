@@ -56,8 +56,8 @@ containing all changes from `feature_branch` is newly committed.
 
 ### Rebase & Fast-forward Strategy
 
-On the other hand, the rebase & fast-forward strategy first applies all the missed commits of
-`main` to the `feature_branch`, like below. In git lingo this is referred to as "rebasing", as it is moving the "base"
+On the other hand, the rebase & fast-forward strategy first applies all the commits of
+`feature_branch` on top of latest `main`, like below. In git lingo this is referred to as "rebasing", as it is moving the "base"
 of the `feature_branch` from `main commit 1` to `someone's commit 2` (the tip of latest `main` branch),
 hence the term "rebase" makes much more sense.
 
