@@ -119,7 +119,6 @@ To minimize the chances of creating a conflict, diverge off the most recent vers
 
 ```shell
 git checkout main
-git fetch
 git pull
 ```
 ### 2. Make a feature branch
@@ -181,6 +180,8 @@ This is an important feature of `git rebase` - `git rebase` can rewrite history,
 
 
 ### 6. Pull the most recent version of main branch
+
+Even as we were working, `main` may have new commits. So just in case, do a fresh `pull` to check.
 
 ```shell
 git pull
