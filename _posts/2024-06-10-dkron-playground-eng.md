@@ -242,7 +242,7 @@ By creating tasks in this manner, you can monitor the success of each execution 
 {: .prompt-info}
 
 
-## 3. 파이썬, Rolling Update
+## 3. Python, Rolling Update
 
 ---
 
